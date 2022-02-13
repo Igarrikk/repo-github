@@ -7,8 +7,11 @@ age = 43
 print(name, age)
 
 name = input('Введите имя: ')
-print('Привет', name)
 age = int(input('Сколько вам лет?: '))
 period = 50
 age_period = age + period
-print('Через', period, 'лет вам будет',  age_period)
+stroka = 'Привет, ' + name + ', через ' + str(period) + ' лет Вам будет ' + str(age_period)
+print(stroka)
+stroka = 'Привет, {}, через {} лет Вам будет {} ' .format(name, period, age_period)
+print(stroka)
+
